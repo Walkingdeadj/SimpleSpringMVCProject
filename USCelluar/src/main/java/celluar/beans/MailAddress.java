@@ -8,6 +8,7 @@ public class MailAddress {
 	private String city;
 	private String state;
 	private int zipCode;
+	
 	public MailAddress() {
 		super();
 	}

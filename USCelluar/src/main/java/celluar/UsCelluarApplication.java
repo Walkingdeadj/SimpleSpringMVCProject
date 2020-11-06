@@ -3,7 +3,7 @@ package celluar;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
+//import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -17,7 +17,7 @@ import celluar.repository.CustomerRepository;
 
 
 @SpringBootApplication
-public class UsCelluarApplication  implements CommandLineRunner {
+public class UsCelluarApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(UsCelluarApplication.class, args);
