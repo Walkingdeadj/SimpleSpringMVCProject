@@ -4,11 +4,19 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 
 @Entity
+@Data
+@NoArgsConstructor
+@Getter
+@Setter
 public class CustomerContact {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,10 +27,6 @@ public class CustomerContact {
 	@Autowired
 	private MailAddress address;
 	
-	public CustomerContact( ) {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 	
 	public CustomerContact(String name) {
 		super();
@@ -44,6 +48,7 @@ public class CustomerContact {
 		this.shopDate = shopDate;
 	}
 	
+	/**
 	public long getId() {
 		return id;
 	}
@@ -83,6 +88,7 @@ public class CustomerContact {
 	public void setAddress(MailAddress address) {
 		this.address = address;
 	}
+	**/
 	
 	//create getters and setters too
 	@Override
